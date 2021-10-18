@@ -736,7 +736,7 @@ a:hover {
   
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .main-pop {
   position: absolute;
