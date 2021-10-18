@@ -259,25 +259,37 @@ if(checkedStatus == "false"){
 	 updateClock();
 
 
-	// var link = document.querySelector(".pop-activator");
-	// var popupWindow = document.querySelector(".container");
-	// var closePopupWindow = document.querySelector(".cross-container");
+
+
+	var link = document.querySelector(".pop-activator");
+	var popupWindow = document.querySelector(".container-pop");
+	var closePopupWindow = document.querySelector(".cross-container");
+	var body = document.querySelector("body");
 	
 	
-	// closePopupWindow.addEventListener("click",() =>{
-	// 	popupWindow.classList.add("popup-transform"); 
-	// 	localStorage.setItem("show","true");
-	// 	shown = localStorage.getItem("show");
-	//  });
-	// var shown = localStorage.getItem("show");
-	// if(shown !== "true"){
-	// 	setTimeout(showPopup,300);
-	// 	function showPopup(){
-	// 		popupWindow.classList.remove("popup-transform");
-	// 	}
-	// }
+	closePopupWindow.addEventListener("click",() =>{
+		popupWindow.classList.add("popup-transform"); 
+		localStorage.setItem("show","true");
+		shown = localStorage.getItem("show");
+	 });
+	 body.addEventListener("click",() =>{
+		popupWindow.classList.add("popup-transform"); 
+		localStorage.setItem("show","true");
+		shown = localStorage.getItem("show");
+	 });
+	 
+	 
+	var shown = localStorage.getItem("show");
 	
-	//  setTimeout(clearStorage,300);
-	//  function clearStorage(){
-	//  	localStorage.clear();
-	//  }
+
+	if(shown !== "true"){
+		setTimeout(showPopup,300);
+		function showPopup(){
+			popupWindow.classList.remove("popup-transform");
+		}
+	}
+	
+	 setTimeout(clearStorage,300);
+	 function clearStorage(){
+	 	localStorage.clear();
+	 }

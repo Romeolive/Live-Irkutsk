@@ -679,6 +679,75 @@ a:hover {
   color: #fcfcfc;
 }
 
+.container-pop{
+  width: 300px;
+  height: 300px;
+  /* box-shadow: 0 0 10px 10px white;  */
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease;
+  background-color: white; 
+  border-radius: 8px;
+  border: 3px solid #52d3aa;
+}
+.container-text{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  font-size: 20px;
+
+}
+.text1{
+  color: #000;
+}
+.cross-container{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.cross-one{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.cross-two{
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 15px;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+.container-image img{
+  width: 100px;
+  height: 100px;
+}
+.popup-transform{
+  transform: translateX(1000vh);
+  transition: transform 0.5s ease;
+  
+}
+body {
+  overflow: hidden;
+}
+.main-pop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: fit-content;
+}
 
 
 
