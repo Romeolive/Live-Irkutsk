@@ -748,6 +748,9 @@ body {
   width: fit-content;
   height: fit-content;
 }
+.dark-mode .service h2{
+  color: white;
+}
 
 
 
