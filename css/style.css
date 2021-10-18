@@ -672,7 +672,7 @@ a:hover {
 .pull-right a{
   color: #52d3aa;
 }
-.dark-mode.time-container{
+.dark-mode .time-container{
   color: #fcfcfc;
 }
 .dark-mode .social a{
