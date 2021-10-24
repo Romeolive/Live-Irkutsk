@@ -233,7 +233,7 @@ if(checkedStatus == "false"){
 	var seconds = now.getSeconds();
 	var hours = now.getHours();
 	var months= now.getMonth()+1;
-	var day = now.getUTCDate();
+	var day = now.getDate();
 	if(minutes < 10) {
 		minutes = "0" + minutes;
 	}
