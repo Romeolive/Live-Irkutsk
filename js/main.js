@@ -289,7 +289,8 @@ if(checkedStatus == "false"){
 		}
 	}
 	
-	 setTimeout(clearStorage,3000000);
+	 setTimeout(clearStorage,300);
 	 function clearStorage(){
 	 	localStorage.clear();
 	 }
+	//  3000000
